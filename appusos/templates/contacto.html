@@ -1,0 +1,20 @@
+{% extends 'ejemplo.html' %}
+
+{% block content %}
+    
+
+      
+<h1>contactenos</h1>
+<form action="" class="formulario_contacto" method="post"><!--si el action está vacío todo lo ingresado se devuelve a views, en def contacto, data -->
+{% csrf_token %} <!--token de seguridad para poder ingresar datos-->
+{{ form.as_p }}
+<button type="submit" id="btnenviar" class="button">enviar</button>
+<style> 
+body 
+{background-color: aqua}
+    </style>
+</form> 
+</body>
+
+
+{% endblock %}

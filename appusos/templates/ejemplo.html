@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Barra de Navegación y Pie de Página</title>
+  
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}
+    <!-- Contenido de la página aquí -->
+    
+    {% endblock %}
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Todos los derechos reservados &copy; 2023 MiEmpresa</p>
+      <ul class="footer-links">
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+      </ul>
+    </div>
+  </footer>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* Estilos para el contenido destacado */
+.destacado {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</body>
+</html>
